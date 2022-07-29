@@ -1,0 +1,451 @@
+\documentclass[12pt]{report}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage {fancybox}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\thepage}
+\rfoot{
+}
+\usepackage{titlesec}
+\titleformat{}
+  {\centering \normalfont \LARGE \bfseries}
+  \centering {Chapter \thechapter }{1em} {}
+    %\newcommand{\cchapter}[1]{\chapter[#1]{\centering #1}}
+% \chapterfont{\centering}
+\usepackage[a4paper,vmargin={30mm,20mm},hmargin={40mm,30mm}]{geometry}
+\begin{document}
+\thisfancypage{\setlength{\fboxsep}{10pt}\doublebox}{}
+\clearpage\thispagestyle{empty}
+\begin{flushright}\end{flushright}
+
+
+
+ \begin{center}
+   \begin{textblock*}
+   \noindent\hspace{0.0in}\small{\textbf{A SEMINAR REPORT ON}}
+
+\vspace*{0.2in}
+
+\noindent\vspace{0.0in}\large{\textbf{\color{blue}"Intelligent Internet Of Things Service Based on Artificial
+Intelligence Technology"}}
+   
+\vspace*{0.2in}
+\textbf{\small{SUBMITTED TO}}   
+   
+\vspace*{0.2in}
+\textbf{\large{SAVITRIBAI PHULE PUNE UNIVERSITY}}  
+   
+\vspace*{0.2in}
+\textbf{\small{As Per}}
+
+\vspace*{0.2in}
+\textbf{\large{COMPUTER ENGINEERING}} 
+
+\vspace*{0.2in}
+\textbf{\small{Submited By}}
+
+\vspace*{0.2in}
+\textbf{\large{ Munjal Bhushan Balasaheb  }}
+
+\vspace*{0.2in}
+\textbf{\small{Roll No : 25 }}
+
+\vspace*{0.2in}
+\textbf{\small{Under The Guidance Of}}
+
+\vspace*{0.2in}
+\textbf{\large{Prof.Ghadge R.A.}}
+
+\vspace*{0.2in}
+\includegraphics[width=4cm, height=4cm]{collagelogo.png}
+
+\vspace*{0.2in}
+\textbf{\large{DEPARTMENT OF COMPUTER ENGINEERING}}
+
+\vspace*{0.05in}
+\textbf{\small{VISHWABHARATI ACADEMY'S COLLAGE OF ENGINEERING}}
+
+\vspace*{0.05in}
+\textbf{\small{SAROLA BADDI}}
+
+\vspace*{0.05in}
+\textbf{\small{AHMEDNAGAR 414201}}
+
+\vspace*{0.2in}
+\textbf{\small{2021-2022}}
+   
+    \end{textblock*}
+
+\end{center}
+\newpage
+\vspace{1 cm}
+\clearpage\thispagestyle{empty}
+\thisfancypage{\setlength{\fboxsep}{10pt}\doublebox}{}
+
+
+\begin{center}
+ 
+
+\includegraphics[width=4cm, height=4cm]{collagelogo.png} \\
+\vspace{0.5in}
+\fontsize{14pt}{16pt}\selectfont \textbf{DEPARTMENT OF COMPUTER ENGINEERING}\\
+\fontsize{12pt}{14pt}\selectfont \textbf{Vishwabharati Academy's Collage Of Engineering \\
+Sarola Baddi,Ahmednagar}\\[0.7in]
+\fontsize{18pt}{18pt}\selectfont \textbf {CERTIFICATE }\\[0.5in]
+\fontsize{12pt}{14pt}\selectfont   
+\begin{flushleft}
+This is to certify that the Mr. Munjal Bhushan Balasaheb from TE Computer Engineering, Roll no. 25  submitted his seminar report on \textbf{"Intelligent Internet Of Things Service Based on
+Artificial Intelligence Technology"} under my guidance  Prof. Ghadge R.A. and supervision. The work has been done to my satisfaction during the academic year 2021-2022 under Savitribai Phule Pune University. 
+\end{flushleft}
+\vspace{1.5in}
+\begin{flushleft}
+
+%Prof. Pachhade.R.C \hspace{1.0cm} Prof.Pachhade.R.C \hspace{1.5cm} Prof.Joshi.S.G \\
+ %\hspace{12.3cm}Bhandari\\
+%\textbf{Seminar Guide \hspace{2cm}  Seminar Co-ordinator \hspace{2cm} H.O.D  
+
+\centering{
+\hspace{0.1cm} Prof.Ghadge R.A. \hspace{5.0cm} Prof.Sapike N.S.  
+\centering \textbf{\hspace{3.5cm} Seminar Guide    \hspace{4.0cm} Seminar Co-ordinator}
+\paragraph{}
+\vspace{0.2in}            
+\hspace{0.5cm} Prof.Joshi S.G. \hspace{5.0cm} Prof.Dhongade V.S.   \textbf{\hspace{5.5cm} H.O.D            \hspace{7.0cm} Principal} }
+
+\end{flushleft}
+\vspace{0.15in}
+\begin{flushleft}
+Date :\\
+\vspace{0.1in}
+Place :Ahmednagar\\
+\end{flushleft}
+\end{center}
+
+\newpage
+
+\chapter* { \centering Acknowledgement}\thisfancypage{\setlength{\fboxsep}{10pt}\doublebox}{}
+\pagenumbering{Roman}
+\vspace{1cm}
+\par
+\onehalfspacing
+\paragraph{}
+This is a great pleasure \& immense satisfaction to express my deepest sense of gratitude
+\& thanks to everyone who has directly or indirectly helped me in completing my Seminar
+work successfully.\\
+
+I express my gratitude towards seminar guide  {\bfseries Prof. Ghadge R.A.} and {\bfseries Prof.Joshi S. G.} Head Of Department of Computer
+Engineering, Vishwabharati Academy's Collage Of Engineering, Sarola Baddi, Ahmednagar, who guided \& encouraged me in completing the Seminar work in scheduled time.\\
+
+I would like to thanks our Principal {\bfseries Prof.Dhongade V. S. }, for his extended support.
+No words are sufficient to express my gratitude to my family for their unwavering
+encouragement. I also thank all friends for being a constant source of my support.\\
+\vspace{3cm}
+\begin{flushright}{Mr.Munjal Bhushan Balasaheb}\end{flushright}
+\begin{flushright}{T. E. Computer}\end{flushright}
+\begin{flushright}{Roll No: 25}\end{flushright}
+
+\tableofcontents
+\listoffigures
+%\addcontentsline{toc}{chapter}{List of Figures}
+%\addcontentsline{toc}{chapter}{List of Tables}
+
+
+
+\chapter*{\centering Abstract}
+\paragraph{} The global Internet industry is becoming more and more mature, showing vigorous
+development potential and vitality, and gradually becoming an important part of promoting
+economic development and challenges. In the future, with the help of artificial intelligence
+technology, big data technology, 5G and other new technologies, and with the increase of Internet
+usage, the focus of Internet connection will shift from people oriented connection to Internet of
+things connection. Since 2020, the novel coronavirus pneumonia outbreak has spread worldwide,
+and it has brought great challenges to the global economy and society. The Internet has played an
+important role in the resumption of work and production, economic recovery and maintenance of
+social operation. 
+\par The application of the Internet of things has alleviated some negative effects of
+the epidemic, and has made an important contribution to economic development. In 2020, China’s
+Internet technology presents a new high level of loading, network infrastructure construction is
+accelerating, 5G network is built and used, and emerging infrastructure such as big data centers
+are built and applied in various cities. At present, China’s network information technology
+self-control ability is gradually enhanced, and breakthroughs have been made in big data
+technology, artificial intelligence and other technologies.
+
+ 
+
+\chapter{Introduction}
+
+\begin{itemize}
+    \item  Internet Digital Economy
+   \paragraph{}  The level of digitalization and intellectualization of information benefiting the people has
+been continuously improved, and the network poverty alleviation has achieved remarkable results
+[2]- Government services such as health code and communication big data travel card have helped
+epidemic prevention and control, and made great contributions to China’s epidemic prevention. In
+the future, digital technology and Internet of things technology will continue to serve the fight
+against the epidemic and economic recovery. In the process of anti-epidemic, information
+technology and Internet of things technology play an important role in epidemic surveillance and
+analysis, virus source query, community management application, virus detection and diagnosis,
+vaccine production, supply and marketing and its deployment.
+\item  Importance Of Digital Economy
+\par Through the impact of the new coronavirus epidemic, more and more people realize the
+importance of digital information and how to use digital information. The function of the digital
+economy and technology to serve the social infrastructure is increasingly obvious. We can predict
+that the digital economy and technology will bring greater changes to society in the future. People
+can understand the way and technical indicators of digitization through technical means. At
+present, artificial intelligence technology, big data, Internet of things and other new technologies
+and new applications are gradually rising, triggering a new scientific and technological change.
+Internet and Internet of things and other technologies have stronger power and wider space.
+Digital economy industry and Internet of things technology perform well in the aspects of supply
+and demand docking, resource allocation, industrial strategy upgrading, etc., which will be more
+obvious in the future.In particular, driven by new theories and technologies such as mobile
+Internet, big data, supercomputing, sensor networks and brain science, artificial intelligence will
+present new features such as deep learning, cross-border integration, human computer
+cooperation, open group intelligence and independent control.
+\end{itemize}
+\pagenumbering{arabic}
+
+
+
+\
+
+\chapter{Development Of Intelligent Internet Of Things}
+\section{Digital world Internet of things}
+\paragraph{} Technology is a combination of the real world and the digital world. In the world of
+the Internet of things, every object is embedded with a class of sensors, has its own unique
+online authentication identity, and can be identified and contacted by the outside. Because
+all kinds of goods have their own intelligent identity, they can be cheap for the enterprises
+in need of information in the society, improve the utilization rate of goods regulation in the
+whole society, reduce the waste of goods, and improve social efficiency.
+
+\section{ Intelligent Internet}
+\paragraph{}
+Today’s intelligent Internet of things includes not only fitness wearable devices and
+household appliances, but also intelligent Internet factories and smart cities. These
+intelligent objects can query the corresponding information online . The development of
+intelligent Internet of things is also inseparable from the upgrading and improvement of
+Internet software and hardware technology and the reduction of cost, as well as the
+innovation and development of big data technology and cloud computing technology.
+According to experts’ prediction, Internet of things equipment will continue to grow with
+the progress of technology, at the same time, the output value of products and services
+related to Internet of things technology will reach a new high.
+\section{ Network technology}
+\paragraph{}
+Relying on the development of Internet of things technology, some famous network
+technology companies are spending a lot of money to build Internet of things facilities and
+equipment, and set up corresponding business departments. Some famous consumer goods
+and manufacturers are also taking advantage of the Internet of things to develop new
+intelligent products day and night. In addition, Internet enterprises have received the favor
+of many venture capital companies, and have extended an olive branch to internet
+intelligent companies. With the continuous progress of information technology and
+Internet of things technology, competent computer professionals are especially popular
+with Internet of things companies. Visionary IT professionals will enjoy challenging and
+lucrative job opportunities.
+
+\chapter{CATEGORIES OF AI}
+ \section{Conventional AI }
+\paragraph{} Conventional AI mostly involves methods now classified as
+machine learning, characterized by formalism and statistical analysis. This is also known as
+symbolic AI, logical AI, neat AI and Good Old Fashioned Artificial Intelligence (GOFAI).
+Methods include: Expert systems: apply reasoning capabilities to reach a conclusion. An expert
+system can process large amounts of known information and provide conclusions based on them.
+Case based reasoning. Bayesian networks. Behavior based AI: a modular method of building AI
+systems by hand.
+\section{Computational Intelligence }
+\par Computational Intelligence involves iterative
+development or learning (e.g. parameter tuning e.g. in connectionist systems). Learning is based
+on empirical data and is associated with non-symbolic AI, scruffy AI and soft computing.
+Methods include: Neural networks: systems with very strong pattern recognition capabilities.
+Fuzzy systems: techniques for reasoning under uncertainty, has been widely used in modern
+industrial and consumer product control systems.
+\newpage
+\section{Evolutionary computation} 
+\par Applies biologically
+inspired concepts such as populations, mutation and survival of the fittest to generate 2
+increasingly better solutions to the problem. These methods most notably divide into evolutionary
+algorithms (e.g. genetic algorithms) and swarm intelligence (e.g. ant algorithms). its greatest
+successes, albeit somewhat behind the scenes. Artificial intelligence is used for logistics, data
+mining, medical diagnosis and many other areas throughout the technology industry
+ 
+%\begin{table}[h]
+%\caption{\bf Literature Review}
+%\begin{tabular}{| l | c | c | l |}\\\hline
+%Sr.No. & Authors & Title & Outcomes \\\hline
+%1 & Sholk Gilda & Evaluating Machine Learning Algorithms for Fake News Detection & The system uses TF-IDF of bi-grams and PCFG for detection of fake news.\par It is found that TF-IDF of bi-grams fed into a Stochastic Gradient Descent model identifies non-credible sources with an accuracy of 77.2\%, with PCFGs having slight effects on recall. \\\hline
+%\end{tabular}
+%\end{table}
+\newpage
+\chapter{Typical problems to which AI methods are applied}
+\paragraph{} Pattern recognition o Optical character recognition o Handwriting recognition o Speech
+recognition o Face recognition Natural language processing, Translation and Chatter bots
+Non-linear control and Robotics Computer vision, Virtual reality and Image processing. Game
+theory and Strategic planning.
+\section{Automation}
+\paragraph{} Automation is the use of machines, control systems and information technologies to
+optimize productivity in the production of goods and delivery of services. The correct incentive
+for applying automation is to increase productivity, and/or quality beyond that possible with
+current human labor levels so as to realize economies of scale, and/or realize predictable quality
+levels. automation greatly decreases the need for human sensory and mental requirements while
+increasing load capacity, speed, and repeatability.
+\section{Cybernetics}
+\paragraph{} Cybernetics in some ways is like the science of organization, with special emphasis
+on the dynamic nature of the system being organized. The human brain is just such a complex
+organization which qualifies for cybernetic study. It has all the characteristics of feedback, storage,
+etc. and is also typical of many large businesses or Government departments. Cybernetics is that
+of artificial intelligence, where the aim is to show how artificially manufactured systems can
+demonstrate intelligent behavior.
+\section{Hybrid intelligent system}
+\paragraph{} Hybridization of different intelligent systems is an innovative
+approach to construct computationally intelligent systems consisting of artificial neural network,
+fuzzy inference systems, rough set, approximate reasoning and derivative free optimization
+methods such as evolutionary computation, swarm intelligence, bacterial foraging and so on. The
+integration of different learning and adaptation techniques, to overcome individual limitations and
+achieve synergistic effects through hybridization or fusion of these techniques, has in recent years
+contributed to an emergence of a large number of new superior classes of intelligence known as
+Hybrid Intelligence.
+\section{Intelligent agent}
+\paragraph{} In artificial intelligence, an intelligent agent (IA) is an autonomous entity
+which observes through sensors and acts upon an environment using actuators (i.e. it is an agent)
+and directs its activity towards achieving goals.
+\section{Intelligent control}
+\paragraph{} Intelligent Control or self-organizing/learning control is a new emerging
+discipline that is designed to deal with problems. Rather than being model based, it is experiential
+based. Intelligent Control is the amalgam of the disciplines of Artificial Intelligence, Systems
+Theory and Operations Research. It uses most recent experiences or evidence to improve its
+performance through a variety of learning schemas, that for practical implementation must
+demonstrate rapid learning convergence, be temporally stable, and be robust to parameter changes
+and internal and external disturbances.
+\section{Automated reasoning}
+\paragraph{} The study of automated reasoning helps produce software that allows
+computers to reason completely, or nearly completely, automatically. Although automated
+reasoning is considered a subfield of artificial intelligence, it also has connections with theoretical
+computer science, and even philosophy.
+\section{Data mining}
+\paragraph{} Data mining (the analysis step of the ”Knowledge Discovery in Databases”
+process, or KDD), an interdisciplinary subfield of computer science, is the computational process
+of discovering patterns in large data sets involving methods at the intersection of artificial
+intelligence, machine learning, statistics, and database systems. The overall goal of the data
+mining process is to extract information from a data set and transform it into an understandable
+structure for further use.
+\section{Behavior-based robotics}
+\paragraph{} Behavior-based robotics is a branch of robotics that bridges artificial
+intelligence (AI), engineering and cognitive science. Its dual goals are: To develop methods for
+con- trolling artificial systems, ranging from physical robots to simulated ones and other
+autonomous software agents To use robotics to model and understand biological sys- tems more
+fully, typically, animals ranging from insects to humans. Cognitive robotics
+\section{Developmental robotics}
+\paragraph{} Developmental Robotics (DevRob), sometimes called epigenetic
+robotics, is a methodology that uses metaphors from neural development and developmental
+psychology to develop the mind for autonomous robots. The program that simulates the functions
+of the genome to develop a robot’s mental capabilities is called a developmental program.
+
+\newpage
+\chapter{The combination of artificial intelligence and Internet of things}
+\paragraph{}The combination of artificial intelligence technology and Internet of things equipment has brought
+a new technological revolution. The two complement each other and give full play to their data
+and technical advantages, which will bring a new experience to people’s life. If the Internet of
+things wants to maintain sustainable growth, it must cooperate with artificial intelligence, because
+the improvement of intelligent technology of the Internet of things is endless. The combination of
+Internet of things and artificial intelligence generates intelligent Internet of things, which makes
+the Internet of things have the ability of data exchange, and can use artificial intelligence
+technology to transform data information into value information. The combination of artificial
+intelligence and Internet of things will have an impact on the following aspects.
+\section{Impact on business intelligence}
+\paragraph{}Using artificial intelligence, we can analyze the big data in
+the Internet of things and obtain effective information. The analysis of good data can prove the
+business of the enterprise, understand where the enterprise is doing better and where it is not
+doing well, and enable the enterprise to better find the path of improvement according to the data .
+If enterprises can combine artificial intelligence and Internet of things, their efficiency and
+decision-making power will be greatly improved, and their innovation and productivity will be
+improved
+\section{ Impact on industrial production}
+\paragraph{} Through machine learning of artificial intelligence, we can
+predict the possible problems of industrial Internet of things products, greatly increase the success
+rate of new product development, and save production time and cost. In addition, the application
+of artificial intelligence can improve and speed up the production process of subject.
+\newpage
+ \chapter{APPLICATIONS OF AI}
+\paragraph{}   Artificial intelligence has been used in a wide range of fields including medical diagnosis, stock
+trading, robot control, law, scientific discovery and toys.
+\section{Hospitals and Medicine}
+\paragraph{}
+A medical clinic can use artificial intelligence systems to organize bed
+schedules, make a staff rotation, and provide medical information. Artificial neural networks are used
+as clinical decision support systems for medical diagnosis, such as in Concept Processing technology
+in EMR software. Other tasks in medicine that can potentially be performed by artificial intelligence
+include: Computeraided interpretation of medical images. Such systems help scan digital images, e.g.
+from computed tomography, for typical appearances and to highlight conspicuous sections, such as
+possible diseases. A typical application is the detection of a tumor. Heart sound analysis.
+\section{Heavy industry}
+\paragraph{} Robots have become common in many industries. They are often given jobs that
+are considered dangerous to humans. Robots have proven effective in jobs that are very repetitive
+which may lead to mistakes or accidents due to a lapse in concentration and other jobs which humans
+may find degrading.
+\section{Game Playing}
+\paragraph{} This prospered greatly with the Digital Revolution, and helped introduce people,
+especially children, to a life of dealing with various types of Artificial Intelligence. You can also buy
+machines that can play master level chess for a few hundred dollars. There is some AI in them, but
+they play well against people mainly through brute force computation–looking at hundreds of
+thousands of positions. The internet is the best example where one can buy a machine and play
+various games.
+\newpage
+\chapter{FUTURE SCOPE OF AI}
+\paragraph{}
+In the next 10 years technologies in narrow fields such as speech recognition will continue to improve
+and will reach human levels. In 10 years AI will be able to communicate with humans in unstructured
+English using text or voice, navigate (not perfectly) in an unprepared environment and will have some
+rudimentary common sense (and domain-specific intelligence). We will recreate some parts of the
+human (animal) brain in silicon. The feasibility of this is demonstrated by tentative hippocampus
+experiments in rats. There are two major projects aiming for human brain simulation, CCortex and
+IBM Blue Brain. There will be an increasing number of practical applications based on digitally
+recreated aspects human intelligence, such as cognition, perception, rehearsal learning, or learning by
+repetitive practice. The development of meaningful artificial intelligence will require that machines
+acquire some variant of human consciousness.Without these uniquely human characteristics, truly
+useful and powerful assistants will remain a goal to achieve. To be sure, advances in hardware,
+storage, parallel processing architectures will enable ever greater leaps in functionality Systems that
+are able to demonstrate conclusively that they possess self awareness, language skills, surface,
+shallow and deep knowledge about the world around them and their role within it will be needed
+going forward.
+\chapter{CONCLUSION}
+
+ \paragraph{} At present, we live in an environment surrounded by data, people have been very dependent on the
+Internet and Internet smart devices. Every day, everyone will produce a lot of data, but these data have
+not been well used by us. If Internet of things devices are not limited by networking devices, it is
+difficult to estimate the amount of data they collect. It can be said that they can collect massive data.
+The data they generate and use are very large. So much data provides a lot of opportunities and
+convenience for people’s production, life and social activities [10]. Due to the limitation of conditions,
+only a part of enterprises or people can make full use of the Internet of things to generate and store
+data for production and life. Although a large amount of data is produced in production and life, it
+cannot be analyzed and processed timely and effectively, and it does not make the data produce real
+efficiency.
+
+\newpage
+\renewcommand\bibname{References}
+\bibliographystyle{IEEEtran}
+\begin{thebibliography}{1}
+
+\addcontentsline{toc}{chapter}{References}
+\bibitem[1]{b} Saito Kazumi,”Multiple topic detection by Parametric Mixture Models (PMM) “, Automatic web
+page categorization for browsing. NTT Technical Review, 2005, pp.4-7.
+\bibitem[2]{} Roy Deb.,” Grounded spoken language acquisition”, Experiments in word learning. IEEE
+Transactions on Multimedia, 2003, pp.164-183.
+\bibitem[3]{} Zhang R G, Hu X H, and Zong Y S,” Discretization of continuous attributes based on improved
+discrete particle swarm optimization”, Computer Engineering and Applications,2017, pp.110-126.
+\bibitem[4]{} Sang Y, Li K Q, and Yan D Q,” A data discretization algorithm based on improved chi-square
+statistic’”, Journal of Dalian University of Technology,2012, pp.354-365.
+\bibitem[5]{} Yu Zhanqiu,” Big data clustering analysis algorithm for internet of things based on K-means”,
+International Journal of Distributed Systems and Technologies, 2019, pp.5-9. (in Chinese).
+\bibitem[6]{} Zhou Fei-Yan, Jin Lin-Peng, Dong Jun,” Review of Convolutional Neural Network”, Chinese
+Journal of Computers, 2017, pp.1019-1031. (in Chinese).
+\bibitem[7]{} Rehman M H U, Chang V, Batool A,” Big data reduction framework for value creation in
+sustainable enterprises”, International Journal of Information Management, 2016, pp.817-828.
+\bibitem[8]{} Zang Maolin,” Human Resource Management in the Era of Big Data”, Journal of Human Resource
+and Sustainability Studies, 2015, pp.25-30. (in Chinese).
+\bibitem[9]{} Wu, L. Y., Chen, P. Y., and Chen, K. Y.,” Why does Loyaltycooperation Behavior Vary Over
+Buyer-seller relationship. Journal of Business Research”,2015, pp.1002-1028.
+
+
+
+\end{thebibliography}
+
+\end{document}
